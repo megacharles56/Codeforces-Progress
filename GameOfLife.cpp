@@ -17,7 +17,8 @@ int main(){
     while(t--){
         vector<vector<lli>> visited(n,vector<lli>(m,0));
         queue<pair<pair<lli, lli>, lli>> q;
-        lli i, j, p, x, y, l=0;
+        int i, j, x, y, l;
+        lli p, l=0;
         cin >> x >> y >> p;
         q.push(mp(mp(x-1,y-1), l));
         bool condition=true;
@@ -54,16 +55,4 @@ int main(){
         }
         cout << "\n";
     }
-}/*
-5 8 5
-01011010
-11110101
-11010100
-11101010
-01010100
-4 5 1
-4 5 2
-4 5 3
-4 5 4
-4 5 5
-*/
+}
